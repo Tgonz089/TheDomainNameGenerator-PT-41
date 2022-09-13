@@ -23,7 +23,7 @@ window.onload = function() {
         }
       }
     }
-    return domainArray;
+    return domainArray + "<br>";
   };
   document.querySelector("#domain").innerHTML = generateDomain();
 };
