@@ -10,9 +10,9 @@ window.onload = function() {
 
   let generateDomain = () => {
     let pronoun = ["the", "our"];
-    let adj = ["great", "big", "aweletsome", "amazing"];
+    let adj = ["great", "big", "awesome", "amazing"];
     let noun = ["jogger", "racoon", "dog"];
-    let tld = [".com", ".org", ".net", "io", "us"];
+    let tld = [".com", ".org", ".net", ".io", ".us"];
     let domainArray = [];
     for (let i = 0; i < pronoun.length; i++) {
       for (let x = 0; x < adj.length; x++) {
@@ -23,7 +23,7 @@ window.onload = function() {
         }
       }
     }
-    return domainArray;
+    return domainArray.join("<br>");
   };
   document.querySelector("#domain").innerHTML = generateDomain();
 };
